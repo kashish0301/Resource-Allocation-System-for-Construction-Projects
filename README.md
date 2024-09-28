@@ -74,6 +74,7 @@ P18-Equans-P1/
 ├── study.pkl              # Study-related data
 ├── study_model4.pkl       # Pickle file for Model 4 study
 └── 2021-2023 Orders Report_Client Level.xlsx # Client-level orders report
+└── requirements.txt # necessary dependencies
   ```
 ---
 ## Streamlit Application
