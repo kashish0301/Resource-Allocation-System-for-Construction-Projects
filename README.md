@@ -28,51 +28,64 @@ This project involves the application of machine learning techniques to solve th
 
 Several machine learning models were used for prediction and classification tasks, including Random Forest Classifier and Multi-Output Classifiers. Oversampling was applied to handle data imbalances, and hyperparameter tuning improved the model's performance.
 
-### Models and Performance:
+The methodology for this project included:
 
-| Model                              | Training Accuracy | Test Accuracy | F1 Score  |
-|-------------------------------------|-------------------|---------------|-----------|
-| **Model 1**: Number of Departments  | 97.92%            | 91.66%        | 0.91      |
-| **Model 2**: Department Names       | 100%              | 92%           | 0.99      |
-| **Model 4**: Department-wise Staff  | 100%              | 99.5%         | 0.95      |
+1. **Data Collection and Pre-processing**
+   - Merged employee timesheet and customer order datasets.
+   - Handled duplicates and performed feature engineering to enhance data quality.
+   - Used random oversampling to address data imbalance.
 
-## Results
+2. **Exploratory Data Analysis (EDA)**
+   - Analyzed data distributions and relationships to identify key features influencing resource allocation.
+
+3. **Model Development**
+   - **Model 1:** Random Forest for predicting department counts, achieving 94.44% testing accuracy.
+   - **Model 2:** Multi-output classifier for department name classification, with a test accuracy of 92%.
+   - **Model 3:** Total staff count prediction using Random Forest, reaching an F1 score of 99%.
+   - **Model 4:** Department-wise staff allocation prediction, obtaining an R-squared value of 0.99.
+
+4. **Model Deployment**
+   - Developed an interactive resource planning tool using Streamlit for user-friendly access to predictions.
+
+5. **Validation and Performance Evaluation**
+   - Evaluated model performance with metrics like accuracy, F1 score, and R-squared to ensure reliability.
+
+
+## Results & Outcomes
+- Achieved high accuracy in department count and staff allocation predictions.
+- Developed a user-friendly resource planning tool using Streamlit for model deployment.
 
 - **Resource Allocation Accuracy**: Improved by **20%**.
 - **Overallocation Reduction**: Decreased by **15%**.
 - **Project Delivery Timelines**: Enhanced by **10%**.
 - **Planning Time and Cost**: Reduced by **20%**.
 
-### Streamlit Application
+## Project Structure
+```
+P18-Equans-P1/
+│
+├── main_code.ipynb       # Main code for data analysis and modeling
+├── model1_pipe_cv.pkl     # Pickle file for Model 1
+├── model2_pipe_cv.pkl     # Pickle file for Model 2
+├── model3_pipe_cv.pkl     # Pickle file for Model 3
+├── model4_pipe_cv.pkl     # Pickle file for Model 4
+├── optuna_study_model2.pkl # Optuna study results for Model 2
+├── streamlitapi           # Streamlit application for resource planning
+├── study.pkl              # Study-related data
+├── study_model4.pkl       # Pickle file for Model 4 study
+└── 2021-2023 Orders Report_Client Level.xlsx # Client-level orders report
+  ```
+---
+## Streamlit Application
 The project has been deployed using **Streamlit** for interactive user access. Users can input project details to forecast department count, staff names, and employee allocations.
 
-### Screenshots
+## Screenshots of Stremlit Application
+![image](https://github.com/user-attachments/assets/df362b55-7a7b-4286-bb55-6172f38a82cb)
 
-Add screenshots of the Streamlit app or prediction results here to make the project more visual.
+![image](https://github.com/user-attachments/assets/f18a85a8-7dc8-4e7b-9e2c-50fd749d512b)
 
----
 
-## Project Structure
 
-```
-P18_Equans_Code_Repository/
-│
-├── main_code/                    # Main code for the application
-│   ├── stremlitapi.py            # Streamlit application script
-│   ├── model1_pipe_cv.pkl        # Model 1 (Number of Departments)
-│   ├── model2_pipe_cv.pkl        # Model 2 (Department Names)
-│   ├── model3_pipe_cv.pkl        # Model 3 (Placeholder)
-│   ├── model4_pipe_cv.pkl        # Model 4 (Department-wise Staff)
-│   └── optuna_study_model2.pkl   # Optuna study model
-│
-├── data/                         # Data files (if applicable)
-│   ├── orders_data.xlsx          # Orders data
-│   └── timesheet_data.xlsx       # Timesheet data
-│
-├── requirements.txt               # Dependencies
-├── README.md                      # Project documentation
-└── LICENSE                        # License file
-```
 
 ---
 
@@ -91,11 +104,8 @@ P18_Equans_Code_Repository/
    streamlit run stremlitapi.py
    ```
 
-## Disclaimer
-
-This repository is publicly available for recruiters to review my project work. The content is proprietary, and no one is permitted to use, copy, or modify the code for any other purpose.
-
----
+## Acknowledgments
+- Equans for the opportunity to work on this innovative project.
 
 ## License
 
