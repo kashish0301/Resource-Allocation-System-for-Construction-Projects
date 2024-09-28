@@ -62,7 +62,7 @@ The methodology for this project included:
 
 ## Project Structure
 ```
-P18-Equans-P1/
+P18_Equans_Code_Repository/
 │
 ├── main_code.ipynb       # Main code for data analysis and modeling
 ├── model1_pipe_cv.pkl     # Pickle file for Model 1
