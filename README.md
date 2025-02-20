@@ -2,6 +2,8 @@
 
 This project is a collaboration with **EQUANS**, a leading construction company, to develop a **Human Resource Allocation Management System**. The project aims to predict and optimize staffing resources for construction projects in the UK, using machine learning models. This system helps improve resource allocation accuracy, reduce over-allocation, and enhance project efficiency.
 
+![Trying some designs (5)](https://github.com/user-attachments/assets/91d3d88b-d3cd-43a4-9213-670415f18f85)
+
 ## Project Overview
 
 This project involves the application of machine learning techniques to solve the problem of resource planning in construction. The developed tool forecasts the resource needs for different roles (e.g., engineers, project managers, mechanical supervisors) and automates planning tasks, leading to significant savings in time and cost.
